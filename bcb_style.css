@@ -16,7 +16,6 @@ html, body {
     font-family: 'Calibri', sans-serif;
 }
 #ClientBlock {
-    /*display: flex;*/
     overflow: hidden;
     padding: 30px;
     box-shadow: 0px 15px 15px -15px rgb(177, 175, 175);
@@ -32,25 +31,14 @@ html, body {
     font-weight: 500;
     color: rgb(85, 100, 163);
 }
-#Icon {
-    /*width: 300px;
-    height: 300px;
-    display: inline-block;
-    vertical-align:top;*/
-}
 #Icon img {
-    /*width: 300px;
-    height: 300px;*/
     width: 30%;
     max-width: 300px;
     max-height: 300px;
 }
 #TextInfo {
-    /*max-width: 900px;*/
     width: 60%;
     float: left;
-    /*display: inline-block;
-    vertical-align:top;*/
 }
 #OperationBlock {
     padding: 30px;
@@ -61,15 +49,10 @@ html, body {
 }
 #CardNumber {
     padding-left: 20px;
-	margin-left: 4%;/*20px;*/
+	margin-left: 4%;
     width: 80%;
 	height: 30px;
 	margin-top: 20px;
-	/*justify-content: center;
-	align-items: center;
-	
-	
-    */
     outline: 0;
     border: rgb(245, 245, 245);
     background: inherit;
@@ -78,7 +61,7 @@ html, body {
 }
 #Date {
     padding-left: 20px;
-	margin-left: 4%;/*20px;*/
+	margin-left: 4%;
     width: 30%;
 	height: 30px;
 	margin-top: 20px;
@@ -90,7 +73,7 @@ html, body {
 }
 #CVC {
     padding-left: 20px;
-	margin-left: 4%;/*20px;*/
+	margin-left: 4%;
     width: 20%;
 	height: 30px;
 	margin-top: 20px;
@@ -173,7 +156,6 @@ html, body {
     margin-right: 40px;
 }
 .ActionButtons2:hover {
-    /*text-decoration: underline;*/
     color: rgb(66, 66, 255);
     cursor: pointer;
 }
@@ -204,7 +186,6 @@ html, body {
     outline: 0;
 }
 .ActionButtons4:hover {
-    /*text-decoration: underline;*/
     color: rgb(66, 66, 255);
     cursor: pointer;
 }
@@ -215,10 +196,9 @@ html, body {
 }
 .PayCard {
     display: inline-block;
-    width: 30%;/*450px;*/
-    /*height: 250px;*/
+    width: 30%;
     margin-top: 50px;
-    margin-right: 8%;/*40px;*/
+    margin-right: 8%;
     padding-bottom: 30px;
     background-color: rgb(245, 245, 245);
     border-radius: 25px;
@@ -226,7 +206,7 @@ html, body {
 }
 .CardTypes {
     padding: 20px;
-    padding-left: 50%;/*230px;*/
+    padding-left: 50%;
 }
 .CardTypes img {
     width: 100%;
@@ -235,7 +215,6 @@ html, body {
     display: inline-block;
     margin-top: 50px;
     width: 60%;
-    /*height: 250px;*/
     vertical-align: top;
     overflow: hidden;
 }
@@ -341,7 +320,6 @@ html, body {
     cursor: pointer;
 }
 .NDS {
-    /*float: left;*/
     font-size: 12pt;
     font-weight: 600;
     margin-top: 30px;

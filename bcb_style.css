@@ -1,0 +1,537 @@
+html, body {
+    margin-top: 0;
+    height: 100%;
+}
+.NativeBlock {
+    position: relative;
+    border-left: 2px solid #a3a1a1;
+    border-right: 2px solid #a3a1a1;
+    border-bottom: 2px solid #a3a1a1;
+    max-width: 1280px; 
+    min-height: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    font-family: 'Calibri', sans-serif;
+}
+#ClientBlock {
+    /*display: flex;*/
+    overflow: hidden;
+    padding: 30px;
+    box-shadow: 0px 15px 15px -15px rgb(177, 175, 175);
+}
+#ClientName { 
+    font-size: 30pt;
+    font-weight: 600;
+    color: rgb(85, 100, 163);
+}
+#ClientContactes {
+    max-width: 650px;
+    font-size: 16pt;
+    font-weight: 500;
+    color: rgb(85, 100, 163);
+}
+#Icon {
+    /*width: 300px;
+    height: 300px;
+    display: inline-block;
+    vertical-align:top;*/
+}
+#Icon img {
+    /*width: 300px;
+    height: 300px;*/
+    width: 30%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#TextInfo {
+    /*max-width: 900px;*/
+    width: 60%;
+    float: left;
+    /*display: inline-block;
+    vertical-align:top;*/
+}
+#OperationBlock {
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    box-shadow: 0px 15px 15px -15px rgb(177, 175, 175);
+}
+#CardNumber {
+    padding-left: 20px;
+	margin-left: 4%;/*20px;*/
+    width: 80%;
+	height: 30px;
+	margin-top: 20px;
+	/*justify-content: center;
+	align-items: center;
+	
+	
+    */
+    outline: 0;
+    border: rgb(245, 245, 245);
+    background: inherit;
+	border-bottom: 2px solid rgb(209, 209, 209);
+	font-size: 16px;
+}
+#Date {
+    padding-left: 20px;
+	margin-left: 4%;/*20px;*/
+    width: 30%;
+	height: 30px;
+	margin-top: 20px;
+    outline: 0;
+    border: rgb(245, 245, 245);
+    background: inherit;
+	border-bottom: 2px solid rgb(209, 209, 209);
+	font-size: 16px;
+}
+#CVC {
+    padding-left: 20px;
+	margin-left: 4%;/*20px;*/
+    width: 20%;
+	height: 30px;
+	margin-top: 20px;
+    outline: 0;
+    border: rgb(245, 245, 245);
+    background: inherit;
+	border-bottom: 2px solid rgb(209, 209, 209);
+	font-size: 16px;
+}
+#AboutBlock {
+    padding: 5%;
+    padding-top: 50px;
+    padding-bottom: 180px;
+}
+#CompanyName {
+    font-size: 28pt;
+    font-weight: 600;
+    color: rgb(85, 100, 163);
+}
+#CompanyProducts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+#ProductPreview {
+    margin: 2%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 20%;
+    border: 1px solid rgb(209, 209, 209);
+    white-space: normal;
+}
+#ProductPreview img {
+    padding: 8%;
+    width: 80%;
+    height: auto;
+}
+#PrName {
+    padding-top: 10px;
+    font-weight: 600;
+    height: 40px;
+}
+#PrPrice {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+#CompanyDescription {
+    padding-top: 20px;
+    padding-right: 20%;
+    padding-left: 30px;
+    font-size: 14pt;
+    font-weight: 600;
+}
+#DescriptionFull {
+    padding-top: 20px;
+}
+.ActionButtons1 {
+    display: inline-block;
+    vertical-align:top;
+    font-size: 24pt;
+    font-weight: 600;
+    color: black;
+    margin-right: 40px;
+    border-width: 0px;
+    background-color: white;
+    outline: 0;
+}
+.ActionButtons2 {
+    display: inline-block;
+    vertical-align:top;
+    font-size: 24pt;
+    font-weight: 600;
+    color: rgb(132, 132, 250);
+    border-width: 0px;
+    background-color: white;
+    outline: 0;
+    margin-right: 40px;
+}
+.ActionButtons2:hover {
+    /*text-decoration: underline;*/
+    color: rgb(66, 66, 255);
+    cursor: pointer;
+}
+.ActionButtons3 {
+    display: inline-block;
+    vertical-align:top;
+    font-size: 12pt;
+    font-weight: 600;
+    color: black;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 15px;
+    border-width: 0px;
+    background-color: rgb(238, 238, 238);
+    outline: 0;
+}
+.ActionButtons4 {
+    display: inline-block;
+    vertical-align:top;
+    font-size: 12pt;
+    font-weight: 600;
+    color: rgb(132, 132, 250);
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 15px;
+    border-width: 0px;
+    background-color: white;
+    outline: 0;
+}
+.ActionButtons4:hover {
+    /*text-decoration: underline;*/
+    color: rgb(66, 66, 255);
+    cursor: pointer;
+}
+.Contactes {
+    display: inline-block;
+    vertical-align:top;
+    padding-right: 30px;
+}
+.PayCard {
+    display: inline-block;
+    width: 30%;/*450px;*/
+    /*height: 250px;*/
+    margin-top: 50px;
+    margin-right: 8%;/*40px;*/
+    padding-bottom: 30px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    box-shadow: 0px 8px 20px 4px rgb(177, 175, 175);
+}
+.CardTypes {
+    padding: 20px;
+    padding-left: 50%;/*230px;*/
+}
+.CardTypes img {
+    width: 100%;
+}
+.PayForm1 {
+    display: inline-block;
+    margin-top: 50px;
+    width: 60%;
+    /*height: 250px;*/
+    vertical-align: top;
+    overflow: hidden;
+}
+.InpForm {
+    overflow: hidden;
+}
+.InpInfo {
+    float: left;
+    width: 50%;
+    font-size: 16pt;
+    font-weight: 600;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.Inp {
+    float: right;
+    width: 45%;
+    padding-left: 10px;
+	margin-left: 0px;
+	margin-top: 30px;
+    outline: 0;
+    border: rgb(245, 245, 245);
+    background: inherit;
+	border-bottom: 2px solid rgb(209, 209, 209);
+	font-size: 16px;
+}
+.PayForm2 {
+    display: inline-block;
+    margin-top: 30px;
+    width: 80%;
+    vertical-align: top;
+}
+.InpInfo2 {
+    float: left;
+    width: 40%;
+    font-size: 16pt;
+    font-weight: 600;
+    color: grey;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.Inp2 {
+    float: right;
+    width: 55%;
+    padding-left: 10px;
+	margin-left: 0px;
+	margin-top: 30px;
+    outline: 0;
+    border: rgb(245, 245, 245);
+    background: inherit;
+	border-bottom: 2px solid rgb(209, 209, 209);
+	font-size: 16px;
+}
+.PayForm1 button {
+    float: left;
+    width: 50%;
+    font-size: 16pt;
+    font-weight: 600;
+	margin-left: 10px;
+    margin-top: 30px;
+    font-size: 14pt;
+    font-weight: 500;
+    background-color: rgba(158, 136, 248, 0.329);
+    border: 1px solid grey;
+    height: 40px;
+    outline: 0;
+}
+.MakeForm {
+    display: block;
+    width: 30%;
+    font-size: 16pt;
+    font-weight: 600;
+	margin-left: 10px;
+    margin-top: 40px;
+    font-size: 14pt;
+    font-weight: 500;
+    background-color: rgba(158, 136, 248, 0.329);
+    border: 1px solid grey;
+    height: 50px;
+    outline: 0;
+}
+.PayForm1 button:hover {
+    background-color: rgb(193, 179, 255);
+    cursor: pointer;
+}
+.MakeForm:hover {
+    background-color: rgb(193, 179, 255);
+    cursor: pointer;
+}
+.FormRemove {
+    display: block;
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(132, 132, 250);
+    border-width: 0px;
+    background-color: white;
+    outline: 0;
+}
+.FormRemove:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.NDS {
+    /*float: left;*/
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: rgb(132, 132, 250);
+    border-width: 0px;
+    background-color: white;
+    outline: 0;
+}
+.NDS:hover {
+    color: rgb(66, 66, 255);
+    cursor: pointer;
+}
+.NDSVariation {
+    float: right;
+    width: 45%;
+}
+.PersDataMSG {
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+    width: 55%;
+}
+.PersDataMSG:hover {
+    color: rgb(66, 66, 255);
+    cursor: pointer;
+}
+.vk {
+    display: inline-block;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #455C81; 
+}
+.vk img {
+    width: 100%;
+}
+.fb {
+    display: inline-block;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #414F91;
+}
+.fb img {
+    width: 100%;
+}
+.tw {
+    display: inline-block;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #4AA2D7;
+}
+.tw img {
+    width: 100%;
+}
+.PayDescr {
+    padding: 6px;
+    padding-top: 30px;
+    font-size: 16pt;
+    font-weight: 600;
+}
+footer {
+    position: absolute;
+    padding: 40px;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+    height: 90px;
+}
+a { 
+    text-decoration: none;
+    color: rgb(132, 132, 250);
+} 
+@media (max-width: 767px) {
+    #Icon img {
+        width: 100%;
+    }
+    #CompanyProducts {
+        white-space: normal;
+    }
+    #ProductPreview {
+        width: 40%;
+    }
+    .NDSVariation {
+        float: left;
+        width: 80%;
+    }
+    .PayForm1 {
+        width: 90%;
+    }
+    .PayForm2 {
+        width: 100%;
+    }
+    .PayCard {
+        width: 70%;
+    }
+    .Inp {
+        float: left;
+        width: 80%;
+        font-size: 14px;
+    }
+    .InpInfo {
+        width: 80%;
+        font-size: 14pt;
+    }
+    .Inp2 {
+        float: left;
+        width: 80%;
+        font-size: 14px;
+    }
+    .InpInfo2 {
+        width: 80%;
+        font-size: 14pt;
+    }
+    .MakeForm {
+        font-size: 10pt;
+        width: 50%;
+    }
+    .PersDataMSG {
+        float: left;
+        width: 90%;
+    }
+}
+@media (max-width: 459px) {
+    #ClientName { 
+        font-size: 20pt;
+    }
+    #ClientContactes {
+        font-size: 12pt;
+    }
+    #ProductPreview {
+        width: 90%;
+    }
+    #CompanyName {
+        font-size: 20pt;
+    }
+    #CompanyDescription {
+        font-size: 12pt;
+    }
+    .PayCard {
+        width: 100%;
+    }
+    .ActionButtons1 {
+        font-size: 16pt;
+        margin-right: 0;
+        width: 90%;
+    }
+    .ActionButtons2 {
+        font-size: 16pt;
+        margin-right: 0;
+        width: 90%;
+    }
+    .ActionButtons3 {
+        font-size: 10pt;
+        margin-top: 15px;
+        margin-right: 0;
+        width: 90%;
+    }
+    .ActionButtons4 {
+        font-size: 10pt;
+        margin-top: 15px;
+        margin-right: 0;
+        width: 90%;
+    }
+    .Inp {
+        font-size: 12px;
+    }
+    .InpInfo {
+        font-size: 12pt;
+    }
+    .Inp2 {
+        font-size: 12px;
+        width: 100%;
+    }
+    .InpInfo2 {
+        font-size: 12pt;
+        width: 100%;
+    }
+    .PayForm1 button {
+        font-size: 10pt;
+    }
+    .MakeForm {
+        width: 100%;
+    }
+    .FormRemove {
+        font-size: 10pt;
+    }
+    .PersDataMSG {
+        font-size: 8pt;
+    }
+}

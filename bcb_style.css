@@ -407,6 +407,9 @@ a {
     #ProductPreview {
         width: 40%;
     }
+    #TextInfo {
+        width: 100%;
+    }
     .NDSVariation {
         float: left;
         width: 80%;

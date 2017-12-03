@@ -86,7 +86,8 @@ html, body {
 #AboutBlock {
     padding: 5%;
     padding-top: 50px;
-    padding-bottom: 180px;
+    padding-bottom: 20px;
+    margin-bottom: 180px;
 }
 #CompanyName {
     font-size: 28pt;
@@ -385,13 +386,13 @@ html, body {
 }
 footer {
     position: absolute;
-    padding-top: 40px;
-    padding-bottom: 30px;
     padding: 4%;
+    padding-top: 40px;
+    padding-bottom: 30px;   
     width: 90%;
     left: 0;
     bottom: 0;
-    height: 90px;
+    height: 110px;
 }
 a { 
     text-decoration: none;

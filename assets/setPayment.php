@@ -8,8 +8,8 @@ $sum = $_POST ["sum"];
 $comm= $_POST ["comm"];
 $email= $_POST ["mail"];
 $query_str="INSERT INTO `payments`.`pay`
-(`id`, `cardNum`, `date`, `cvc`, `sum`, `comm`, `email`) VALUES (NULL, '$card', '$mmgg', '$cvc', '$sum', '$comm', '$email')";
-echo $query_str;
+(`id`, `cardNum`, `date`, `cvc`, `sum`, `comm`, `email`, `safe`) VALUES (NULL, '$card', '$mmgg', '$cvc', '$sum', '$comm', '$email', 0)";
+//echo "Платеж выполнен";
 mysql_query($query_str);
 mysql_close();
 ?>

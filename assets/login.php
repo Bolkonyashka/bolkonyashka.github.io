@@ -15,8 +15,9 @@ $result = $conn->query("SELECT * FROM admins WHERE `login` = '$user'");
 while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
     if (password_verify($pass, $rs["pass"]))
     {
+        $curtime = time();
         $encoded_header = base64_encode('{"alg": "HS256","typ": "JWT"}');
-        $encoded_payload = base64_encode('{"name": "' . $user . '"}');
+        $encoded_payload = base64_encode('{"name": "' . $user . '", "time": "' . $curtime . '"}');
         $header_and_payload_combined = $encoded_header . '.' . $encoded_payload;
         $conn2 = new mysqli("localhost", "root", "", "keys");
         $kres = $conn2->query("SELECT * FROM skeys WHERE id=1");

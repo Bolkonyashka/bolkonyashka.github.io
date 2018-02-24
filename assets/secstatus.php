@@ -8,13 +8,19 @@
     $secret_key = base64_decode($akres['skey']);
     
     $jwt_values = explode('.', $recieved_jwt);
+
+    $payload = json_decode(base64_decode($jwt_values[1]));
+    $toktime = $payload->time;
+    $curtime = time();
+    $timediff = $curtime - $toktime;
     
     $recieved_signature = $jwt_values[2];
     $recieved_header_and_payload = $jwt_values[0] . '.' . $jwt_values[1];
+  
     
     $what_signature_should_be = base64_encode(hash_hmac('sha256', $recieved_header_and_payload, $secret_key, true));
     
-    if($what_signature_should_be == $recieved_signature) {
+    if($what_signature_should_be == $recieved_signature && $timediff <= 60) {
         return true;
     } else {
         return false;
